@@ -1,0 +1,10 @@
+A jQuery plugin for dynamically filtering DOM elements against their text/values with some options.
+
+Example usage:
+
+$("#filtre").instantFilter({
+    searchElems : ".elsToSearch",   // selector string or element collection
+    condition     : "contains",     // "contains" | "startsWith" | reg exp obj, e.g. /etc/
+    actElems      : function (el){ return el; },    // a function to find which element to act upon based on the currently searched element
+    caseSensitive : false
+});

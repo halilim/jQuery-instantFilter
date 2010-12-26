@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Halil Özgür" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="instantFilter.js"></script>
+	<title>jQuery instantFilter</title>
+</head>
+<body>
+    <label for="filter">Filter : </label><input type="text" name="filter" id="filter" />
+    <div class="data">
+        <div>ActionScript</div>
+        <div>AppleScript</div>
+        <div>Asp</div>
+        <div>BASIC</div>
+        <div>C</div>
+        <div>C++</div>
+        <div>Clojure</div>
+        <div>COBOL</div>
+        <div>ColdFusion</div>
+        <div>Erlang</div>
+        <div>Fortran</div>
+        <div>Groovy</div>
+        <div>Haskell</div>
+        <div>Java</div>
+        <div>JavaScript</div>
+        <div>Lisp</div>
+        <div>Perl</div>
+        <div>PHP</div>
+        <div>Python</div>
+        <div>Ruby</div>
+        <div>Scala</div>
+        <div>Scheme</div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/
+        $("#filter").instantFilter({
+            searchElems : ".data div"
+        });
+    /*]]>*/</script>
+</body>
+</html>
